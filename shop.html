@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-    
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<script type="text/javascript" src="pdf.js"></script>
-<body>
 
+
+<body>
 <br></br>
 <button onclick="TogetherJS(this); return false;">Start collaboration</button><br></br>
+
+<button id="value">Convert to pdf</button>
 <script>
 document.getElementById("value").onclick = function() {myFunction()};
 
@@ -54,7 +53,7 @@ app.controller("myCtrl", function($scope) {
     }
 });
 </script>
-<button id="value">Convert to pdf</button>
+
 
 <div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width:400px;">
   <header class="w3-container w3-light-grey w3-padding-16">
